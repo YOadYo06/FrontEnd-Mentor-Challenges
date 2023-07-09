@@ -12,8 +12,21 @@ body {
     --FF-F:'Fraunces', serif;
     --BOLDER:700;
     --WEAKER:500;
+    --DC:hsl(158, 36%, 37%);
+    --CREAM:hsl(30, 38%, 92%);
+    --VDB:hsl(212, 21%, 14%);
+    --DGB:hsl(228, 12%, 48%);
 }
+/*
+- Dark cyan: hsl(158, 36%, 37%)
+- Cream: hsl(30, 38%, 92%)
 
+### Neutral
+
+- Very dark blue: hsl(212, 21%, 14%)
+- Dark grayish blue: hsl(228, 12%, 48%)
+- White: hsl(0, 0%, 100%)
+*/
 img,
 svg {
   display: block;
@@ -57,6 +70,7 @@ img{
 .aa{
     font-size: 1rem;
     font-family: var(--FF-M);
+    color: var(--DGB);
 }
 .bb{
     font-size: 2rem;
@@ -67,6 +81,7 @@ img{
 .cc{
     font-family: var(--FF-M);
     line-height: 25px;
+    color: var(--DGB);
 }
 .y{
     color: hsl(158, 36%, 37%);
@@ -85,18 +100,24 @@ img{
     font-weight: 900;
     font-family: var(--FF-M);
     text-decoration: line-through;
+    color: var(--DGB);
 }
-button{
+.bt{
+    gap: 1rem;
     color: white;
     align-self: center;
-    display: inline;
+    display: inline-flex;
+    justify-content: center;
     background-color: hsl(158, 36%, 37%);
     padding: 1rem;
     border: 0;
     border-radius: 10px;
     width: 90%;
+    font-size: 1rem;
+    padding:1rem;
 }
-button:hover{
+
+.bt:hover{
     background-color: hsl(212, 21%, 14%);
 }
 @media screen and (min-width: 600px) and (max-width:819px){
