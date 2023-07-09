@@ -1,0 +1,235 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+html,
+body {
+  height: 100%;
+}
+
+:root{
+    --FF-M:'Montserrat', sans-serif;
+    --FF-F:'Fraunces', serif;
+    --BOLDER:700;
+    --WEAKER:500;
+}
+
+img,
+svg {
+  display: block;
+  max-width: 100%;
+}
+/*Containers Styles*/
+body{
+    background-color: hsl(30, 38%, 92%);
+    display: grid;
+    place-content: center;
+}
+main{
+    padding: 1rem;
+    background-color: hsl(30, 38%, 92%);
+}
+.ctr{
+    border-radius: 15px;
+    overflow: hidden;
+}
+footer{
+    background-color: hsl(30, 38%, 92%);
+    z-index: 1;
+    width: 100vw;
+    height: 5vh;
+    text-align: center;
+    position: fixed;
+    bottom: 0;
+}
+.proContent{
+    padding: 1rem;
+}
+img{
+    height: 100%;
+}
+.proContent{
+    background-color: white;
+    display: flex;
+    flex-flow: column nowrap;
+    gap: 1rem;
+}
+.aa{
+    font-size: 1rem;
+    font-family: var(--FF-M);
+}
+.bb{
+    font-size: 2rem;
+    font-family: var(--FF-F);
+    font-weight: 900;
+    line-height: 30px;
+}
+.cc{
+    font-family: var(--FF-M);
+    line-height: 25px;
+}
+.y{
+    color: hsl(158, 36%, 37%);
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    align-items: center;
+}
+.dd{
+    font-size: 2.5rem;
+    font-weight: 900;
+    font-family: var(--FF-S);
+}
+.ee{
+    font-size: 1rem;
+    font-weight: 900;
+    font-family: var(--FF-M);
+    text-decoration: line-through;
+}
+button{
+    color: white;
+    align-self: center;
+    display: inline;
+    background-color: hsl(158, 36%, 37%);
+    padding: 1rem;
+    border: 0;
+    border-radius: 10px;
+    width: 90%;
+}
+button:hover{
+    background-color: hsl(212, 21%, 14%);
+}
+@media screen and (min-width: 600px) and (max-width:819px){
+    .ctr{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        place-content: center;
+    }
+}
+@media screen and (min-width: 820px) and (max-width:1439px){
+    .ctr{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        place-content: center;
+        width: 800px;
+    }
+}
+
+@media screen and (min-width: 1440px){
+    body{
+        overflow: hidden;
+        background-color: rgba(240,240,240,255);
+    }
+    main{
+        z-index: 1;
+        background-color: hsl(30, 38%, 92%);
+        width:80vw;
+        height: 70vh;
+        display: grid;
+        place-content: center;
+    }
+    .ctr{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        place-content: center;
+    }
+    .ctr{
+        width: 900px;
+    }
+/*Figures style*/
+/*The 12 points*/
+
+.st{
+    position:absolute;
+    bottom:-6%;
+    left: 10%;
+    padding:0;
+    width: 25px;
+    height: 200px;
+    background-color: rgba(240,240,240,255);
+    display:flex;
+    flex-flow: column nowrap;
+    justify-content: space-between;
+}
+.st div{
+    box-shadow: 35px 0px rgba(105,190,208,255);
+    border-radius: 50%;
+    width: 25px;
+    height: 25px;
+    background-color: rgba(105,190,208,255);
+}
+.st div:nth-child(n)::before{
+    position: absolute;
+    content: '';
+    border-radius: 50%;
+    width: 25px;
+    height: 25px;
+    background-color: rgba(105,190,208,255);
+    left:-35px;
+}
+/*The L Figure*/
+.L{
+    position: absolute;
+    background-color: transparent;
+    width:4vw;
+    height: 10.6vh;
+    top:-1.5%;
+    left: 10%;
+}
+.borders{
+    position: absolute;
+    background-color: transparent;
+    border: 25px solid #fac7c6;
+    border-radius: 10%;
+    border-right: 0;
+    border-top: 0;
+    height: 100%;
+    width: 100%;
+}
+.point{
+    position: absolute;
+    background-color: #fac7c6;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    bottom:-25px;
+    right: -30px;
+}
+
+.s{
+    position:absolute;
+    top: 1%;
+    right:250px;
+    width: 187.2px;
+    height: 90px;
+    background-color: transparent;
+}
+/*The zigzag Figure*/
+.zigzag{
+    
+    position: absolute;
+    border: 20px solid #fbc6c6;
+    rotate: 45deg;
+    width: 90px;
+    height: 90px;
+    background-color: transparent;
+    border-right:0;
+    border-bottom:0;
+}
+.a{
+    right:-60px;
+    top: 50px;
+}
+.b{
+    right: 70px;
+    top: 50px;
+}
+.c{
+    right:-190px;
+    top: 50px;
+}
+.d{
+    right: -320px;
+    top: 50px;
+}
+}
