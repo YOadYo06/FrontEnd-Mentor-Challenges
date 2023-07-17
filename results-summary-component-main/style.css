@@ -1,0 +1,217 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: var(--FF);
+}
+
+:root{
+    --prm-Light-red: hsla(0, 100%, 67%,0.1);
+    --prm-Orangey-yellow: hsla(39, 100%, 56%,0.1);
+    --prm-Green-teal: hsla(166, 100%, 37%,0.1);
+    --prm-Cobalt-blue: hsla(234, 85%, 45%,0.1);
+    --grd-Light-slate-blue: hsl(252, 100%, 67%);
+    --grd-Light-royal-blue: hsl(241, 81%, 54%);
+    --grd-Violet-blue: hsla(256, 72%, 46%, 1);
+    --grd-Persian-blue: hsla(241, 72%, 46%, 0);
+    --ntr-Pale-blue: hsl(221, 100%, 96%);
+    --ntr-Light-lavender: hsl(241, 100%, 89%);
+    --ntr-Dark-gray-blue: hsl(224, 30%, 27%);
+    --FS-PRGPH:18px;
+    --FF: 'Hanken Grotesk', sans-serif;
+    --FW5:500;
+    --FW7:700;
+    --FW8:800;
+}
+
+body{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    justify-content: center;
+}
+
+main{
+    height: 91vh;
+    width: 100vw;
+    
+}
+footer{
+    height: 9vh;
+    width: 100vw;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+}
+.balela{
+    height: 40%;
+    width: 100vw;
+    background-image: linear-gradient(to bottom,var(--grd-Light-slate-blue),var(--grd-Light-royal-blue));
+    display: flex;
+    flex-flow: column nowrap ;
+    justify-content: center;
+    align-items: center;
+    padding: 3vw;
+    gap:20px;
+    border-radius: 0 0 30px 30px ;
+    color: white;
+}
+
+.rlt{
+    font-weight: var(--FW5);
+    font-size: 0.8rem;
+    color: var(--ntr-Light-lavender);
+}
+
+.stasb3n{
+    font-weight: var(--FW7);
+    font-size: 2rem;
+}
+
+.ofmya{
+    color: rgba(135,122,255,255);
+    font-size: 0.6rem;
+}
+
+.cir{
+    background-image: linear-gradient(to bottom,var(--grd-Violet-blue),var(--grd-Persian-blue));
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+    border-radius:50%;
+    width: 88.8px;
+    height: 88.8px;
+}
+.tx{
+    color: rgba(181,177,255,255);
+    text-align: center;
+    font-size: 0.8rem;
+}
+.hhh{
+    height: 60%;
+    width: 100vw;
+    background-color: white;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.sum{
+    width: 90vw;
+    height: 5vh;
+    background-color: white;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.summ{
+    font-weight: var(--FW8);
+}
+
+.t{
+    width: 90vw;
+    height: 7vh;
+    padding: 3vw;
+    background-color: transparent;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 10px;
+}
+
+.a,.b,.c,.d{
+    padding: 3vw;
+}
+.per{
+    font-weight: var(--FW8);
+}
+.e{
+    background-color: var(--prm-Light-red);
+}
+.react{
+    color: hsl(0, 100%, 45%);
+}
+.f{
+    background-color: var(--prm-Orangey-yellow);
+}
+.memo{
+    color:hsl(39, 100%, 45%);
+}
+.g{
+    background-color: var(--prm-Green-teal);
+}
+.verb{
+    color: hsl(166, 100%, 35%);
+}
+.h{
+    background-color: var(--prm-Cobalt-blue);
+}
+.visu{
+    color: hsl(234, 85%, 35%);
+}
+span{
+    color: rgba(154,147,154,255);
+}
+button{
+    width: 90vw;
+    border-radius: 25px;
+    height: 7vh;
+    background-color: var(--ntr-Dark-gray-blue);
+    color: #fff;
+    border: none;
+}
+button:active{
+    background-image: linear-gradient(to bottom,var(--grd-Violet-blue),var(--grd-Light-royal-blue));
+}
+@media screen and (min-width: 768px){
+    main{
+        display: grid;
+        place-content: center;
+    }
+    .container{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        width: 60vw;
+        height: 75vh;
+        box-shadow: 2px 2px 15px rgb(212, 207, 207);
+        border-radius: 25px;
+    }
+    .balela{
+        border-radius: 25px;
+        height: 75vh;
+        width: 30vw;
+    }
+    .hhh{
+        width: 30vw;
+        height: 75vh;
+        gap: 1vh;
+    }
+    .sum{
+        width: 25vw;
+        height: 5vh;
+    }
+
+    .t{
+        padding: 1vw;
+        width: 25vw;
+        height: 10vh;
+    }
+    button{
+        width: 25vw;
+    }
+}
