@@ -1,0 +1,168 @@
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: var(--FF);
+}
+
+:root{
+    --main_BG: hsl(217, 54%, 11%);
+    --card_BG: hsl(216, 50%, 16%);
+    --line: hsl(215, 32%, 27%);
+    --Soft_blue: hsl(215, 51%, 70%);
+    --Cyan: hsl(178, 100%, 50%);
+    --FF:'Outfit', sans-serif;
+}
+
+p{
+    font-size: 10px;
+    font-weight: 300;
+}
+
+main{
+    background-color: var(--main_BG);
+    display: grid;
+    place-content: center;
+    font-size: 18px;
+    height: 97vh;
+}
+
+.container{
+    display: flex;
+    flex-flow: column nowrap;
+    width: 195px;
+    height: 330px;
+    padding: 10px;
+    gap: 10px;
+    background-color: var(--card_BG);
+    align-items: flex-start;
+    border-radius: 7px;
+}
+
+h6{
+    color: white;
+    font-weight: 600;
+}
+
+.a{
+    gap: 10px;
+    display: flex;
+    flex-flow: column nowrap;
+}
+
+figure{
+    gap:10px;
+}
+
+.container .a figure img{
+    border-radius: 7px;
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.txt{
+    color: var(--Soft_blue);
+}
+
+section{
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    gap: 5px;
+}
+
+.hahi{
+    display: flex;
+    width: 175px;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+}
+
+.eth{
+    color: aqua;
+}
+
+.icons{
+    height: 10px;
+}
+
+hr{
+    width: 175px;
+    border-image: none;
+    border-color: var(--line);
+    border-style: solid none none;
+    border-width: 1.5px 0 0 ;
+}
+
+.bava{
+
+    width: 155px;
+    gap: 10px;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.container .bava img{
+    border: solid white 1px;
+    border-radius: 50%; 
+    width: 20px;
+    height: 20px;
+}
+
+span{
+    color: white;
+    font-size: 6px;
+}
+:is(.tvt,.tvt,.eth){
+    font-size: 9px;
+}
+
+footer{
+    position: fixed ;
+    background-color: var(--main_BG);
+    bottom:0;
+    color: white;
+    width: 100vw;
+    height: 3vh;
+    font-size: 10px;
+    text-align: center;
+}
+a{
+    color: rgb(255, 0, 85);
+}
+a:hover,a:focus{
+    color: hsl(175, 100%, 50%);
+}
+
+@media screen and (max-width: 375px){
+    .container {
+        width:90vw;
+        height: 160vw;
+        padding: 5vw;
+    }
+    hr{
+        width: 80vw;
+    }
+    .hahi{
+        width: 80vw;
+    }
+}
+@media screen and (max-width: 175px){
+    .container {
+        width:157.5px;
+        height: 300px;
+        padding: 8.75px;
+    }
+    hr{
+        width: 140px;
+    }
+    .hahi{
+        width: 140px;
+    }
+    main{
+        overflow: hidden;
+    }
+}
