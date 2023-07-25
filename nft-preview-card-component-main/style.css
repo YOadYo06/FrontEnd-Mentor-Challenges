@@ -61,6 +61,28 @@ figure{
     height: auto;
 }
 
+.vi:hover {
+    position: relative;
+    background-image: red;
+}
+
+.vi:hover:after {
+    content: url(./images/icon-view.svg);
+    display: block;
+    position: absolute;
+    left: 65px;
+    top: 65px;
+}
+.vi:hover:before {
+    content: "";
+    width: 175px;
+    height: 175px;
+    border-radius: 7px;
+    background-color: hsla(180, 100%, 50%,0.3);
+    display: block;
+    position: absolute;
+}
+
 .txt{
     color: var(--Soft_blue);
 }
@@ -118,6 +140,10 @@ span{
 }
 :is(.tvt,.tvt,.eth){
     font-size: 9px;
+}
+
+:is(h6,span):hover{
+    color: aqua;
 }
 
 footer{
