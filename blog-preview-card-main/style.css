@@ -1,0 +1,106 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --Yellow: hsl(47, 88%, 63%);
+    --White: hsl(0, 0%, 100%);
+    --Grey: hsl(0, 0%, 50%);
+    --Black: hsl(0, 0%, 7%);
+
+    --Font-size: 16px;
+
+}
+
+img{
+    display: block;
+    width: 100%;
+}
+
+html,body{
+    height: 100vh;
+    overflow: hidden;
+}
+body{
+
+    width: 100vw;
+    height: 100vh;
+    background-color: var(--Yellow);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    overflow: hidden;
+
+}
+
+main{
+    border: 1px #000 solid;
+    font-family: "Figtree", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 900;
+    font-style: normal;
+    border-radius: 15px;
+    height: 500px;
+    width: 300px;
+    padding: 5px 20px;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: space-around;
+    box-shadow: #000 7px 7px;
+}
+
+.illustration{
+    border-radius: 10px;
+}
+
+
+
+.text-1{
+    border-radius: 5px;
+    font-weight: 800;
+    font-size: 15px;
+    padding: 2vw 4vw;
+    background-color: var(--Yellow);
+}
+.text-2{
+    font-size: 13px;
+    font-weight: 600;
+}
+.text-3{
+    font-size: 20px;
+    
+}
+.text-4{
+    color: var(--Grey);
+    font-size:13px;
+    font-weight: 600;
+}
+
+.avatar{
+    display: flex;
+    align-items: center;
+    font-size: 15px;
+    justify-content: center;
+}
+
+.prof-ava{
+    width: 35px;
+    margin-right: 5vw;
+    
+}
+
+.attribution{
+    position: absolute;
+    bottom: 0;
+    transform: translate(-50%, -10%);
+    height: 10px;
+    font-size: 11px;
+    color: hsl(228, 45%, 44%);
+}
+
