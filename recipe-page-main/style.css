@@ -1,0 +1,317 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --Nutmeg: hsl(14, 45%, 36%);
+    --Dark_Raspberry: hsl(332, 51%, 32%);
+
+    --White: hsl(0, 0%, 100%);
+    --Rose_White: hsl(330, 100%, 98%);
+    --Eggshell: hsl(30, 54%, 90%);
+    --Light_Grey: hsl(30, 18%, 87%);
+    --Wenge_Brown: hsl(30, 10%, 34%);
+    --Dark_Charcoal: hsl(24, 5%, 18%);
+}
+
+img{
+    display: block;
+    width: 100vw;
+}
+
+html,body{
+    margin: 0;
+    overflow-x: hidden;
+}
+
+body{
+    width: 100%;
+    height: max-content;
+    display: flex;
+    flex-direction: column;
+}
+
+main{
+    height: max-content;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: space-between;
+}
+
+section{
+    padding: 10px 0 10px 20px;
+    margin-right: 20px;
+    height: max-content;
+    width: 100%;
+}
+
+.comp{
+    height: max-content;
+    width: 107vw;
+    padding-right: 90px;
+}
+
+.div2{
+    
+    border-radius: 5px;
+    margin-left: 30px;
+    background-color: var(--Rose_White);
+}
+
+.div2 ul{
+    padding-left: 30px;
+
+}
+
+.div5{
+    padding-bottom: 40px;
+}
+
+h1{
+    font-size: 34px;
+}
+
+h1,h2{
+    font-family: "Young Serif", serif;
+    font-weight: 900;
+    font-style: normal; 
+    padding: 20px 0 20px 0; 
+}
+
+p,h3,span{
+    font-family: "Outfit", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+}
+
+
+p,h3{
+    padding: 5px;
+}
+
+.p1{
+    padding: 20px 0 20px 0;
+}
+
+h2{
+    color: var(--Nutmeg);
+}
+
+h3{
+    color: var(--Dark_Raspberry);
+}
+
+ul li{
+    
+    padding: 5px;
+}
+
+.col{
+    padding-left: 20px;
+}
+
+.dot{
+    list-style-type: none;
+}
+
+
+.number{
+    padding: 0 20px 0 7px;
+    color: var(--Nutmeg);
+}
+
+.fl{
+    display: flex;
+}
+
+
+
+.gras{
+    padding-left: 7px;
+    font-size: larger;
+    white-space: nowrap;
+}
+
+.nut{
+    display: flex;
+    justify-content: space-between;
+    height: 200px;
+    width: 100%;
+}
+
+.ind{
+    padding-bottom: 20px ;
+}
+
+.info{
+    width: 100%;
+}
+
+.info p{
+    height: 50px;
+    padding: 20px 0 20px 0;
+    display: flex;
+    align-items: center;
+}
+
+.line{
+    padding-top:0 ;
+    height: 2px;
+    width: 100%;
+    background-color: var(--Light_Grey);
+}
+
+/*
+.cont{
+    display: flex;
+    border: 2px solid #000;
+    background-color: red;
+}*/
+
+.info1{
+    color: var(--Nutmeg);
+}
+
+
+.attribution{
+    text-align: center;
+    height: 10px;
+    font-size: 11px;
+    color: hsl(228, 45%, 44%);
+}
+
+@media screen and (min-width:1364px){
+
+    .div1{
+        margin-left: 0px;
+        margin-top: 10px;
+        padding-bottom: 0;
+    }
+    h1{
+        padding: 0;
+    }
+    .p1{
+        padding: 0 0 0 0 ;
+    }
+    .div2{
+        margin-left: 0px;  
+        padding-left: 3px;
+        padding-bottom: 5px;
+    }
+    p{
+        padding: 0;
+    }
+    h2{
+        padding: 0;
+    }
+    .ind{
+        padding: 0;
+    }
+    .div2 ul li {
+        padding: 1px 0 1px 0;
+    }
+    .comp{
+        height: max-content;
+        width: 460px;
+        padding-right: 90px;
+    }
+    .div3 ul{
+        padding-left: 12px;
+    }
+    .div3 ul li{
+        padding: 1px;
+    }
+    .div2 ul{
+        padding-left: 17px;
+    }
+    .div4 ul li{
+        padding:0;
+    }
+    .div5{
+        margin-bottom: 15px;
+    }
+    .info p{
+        height: 15px;
+        padding: 0;
+    }
+    .line{
+        padding: 0;
+        height: 1px;
+    }
+
+    h1,h2{
+        font-family: "Young Serif", serif;
+        font-weight: 900;
+        font-style: normal;  
+    }
+
+    .gras{
+        padding-left: 0px;
+        font-size: larger;
+        white-space: nowrap;
+    }
+    
+    .nut{
+        display: flex;
+        justify-content: space-between;
+        height: 20px;
+        width: 100%;
+    }
+
+    section{
+        padding: 0;
+    }
+    img{
+        width: 100%;
+        border-radius: 7px;
+    }
+    body,html{
+        height: 100vh;
+        width: 100vw;
+    }
+
+    body{
+        justify-content: center;
+        align-items: center;
+        background-color: var(--Eggshell);
+    }
+
+    main{
+        border-radius: 10px;
+        background-color: white;
+        font-size: 5px;
+        height: 600px;
+        width: 400px;
+        padding: 15px;
+        
+    }
+
+    .attribution{
+        position: absolute;
+        bottom: 0;
+    }
+
+    h1{
+        font-size: 15px;
+    }
+    
+    .gras,p,span{
+        font-size: 6px;
+    }
+
+    h2{
+        font-size: 10px;
+    }
+
+    h3{
+        font-size: 8px;
+    }
+
+    .info p{
+        font-size: 6px;
+    }
+}
