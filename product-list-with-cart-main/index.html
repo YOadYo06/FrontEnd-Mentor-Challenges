@@ -1,0 +1,513 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <link rel="stylesheet" href="style.css">
+  <script src="main.js" defer></script>
+
+  <title>Frontend Mentor | Product list with cart</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body>
+  <main>
+    <div class="bruh">
+      <div class="brt">
+        <h1>Desserts</h1>
+        <div class="cont-1">
+          
+          <div class="item">
+            
+            <div class="cont-2">
+              <img src="/assets/images/image-waffle-mobile.jpg" class="hidden mobile" alt="image-waffle-mobile">
+              <img src="/assets/images/image-waffle-tablet.jpg" class="hidden tablet" alt="image-waffle-tablet">
+              <img src="/assets/images/image-waffle-desktop.jpg" class="hidden desktop" alt="image-waffle-desktop" >
+
+              <div class="calc">
+                <img class="ic minus" src="/assets/images/icon-decrement-quantity.svg" alt="icon-decrement-quantity">
+                <p class="quantity">0</p>
+                <img class="ic plus" src="/assets/images/icon-increment-quantity.svg" alt="icon-increment-quantity">
+              </div>
+
+              <div class="add-to-cart">
+                <img src="/assets/images/icon-add-to-cart.svg" alt="icon-add-to-cart" class="cart-img">
+                <p class="a">Add to Cart</p>
+              </div>
+
+            </div>
+            
+            <p class="gry">Waffle</p>
+            <p class="title">Waffle with Berries</p>
+            <p class="price">$6.50</p>
+
+            
+
+          </div>
+          
+          <div class="item">
+            <div class="cont-2">
+              <img src="/assets/images/image-creme-brulee-mobile.jpg" class="hidden mobile" alt="image-creme-brulee-mobile">
+              <img src="/assets/images/image-creme-brulee-tablet.jpg" class="hidden tablet" alt="image-creme-brulee-tablet">
+              <img src="/assets/images/image-creme-brulee-desktop.jpg" class="hidden desktop" alt="image-creme-brulee-desktop" >
+
+              <div class="calc">
+                <img class="ic minus" src="/assets/images/icon-decrement-quantity.svg" alt="icon-decrement-quantity">
+                <p class="quantity">0</p>
+                <img class="ic plus" src="/assets/images/icon-increment-quantity.svg" alt="icon-increment-quantity">
+              </div>
+
+              <div class="add-to-cart">
+                <img src="/assets/images/icon-add-to-cart.svg" alt="icon-add-to-cart" class="cart-img">
+                <p class="a">Add to Cart</p>
+              </div>
+
+            </div>
+            
+            <p class="gry">Crème Brûlée</p>
+            <p class="title">Vanilla Bean Crème Brûlée</p>
+            <p class="price">$7.00</p>
+            
+          </div>
+          
+          <div class="item">
+            <div class="cont-2">
+              <img src="/assets/images/image-macaron-mobile.jpg" class="hidden mobile" alt="image-macaron-mobile">
+              <img src="/assets/images/image-macaron-tablet.jpg" class="hidden tablet" alt="image-macaron-tablet">
+              <img src="/assets/images/image-macaron-desktop.jpg" class="hidden desktop" alt="image-macaron-desktop" >
+
+              <div class="calc">
+                <img class="ic minus" src="/assets/images/icon-decrement-quantity.svg" alt="icon-decrement-quantity">
+                <p class="quantity">0</p>
+                <img class="ic plus" src="/assets/images/icon-increment-quantity.svg" alt="icon-increment-quantity">
+              </div>
+
+              <div class="add-to-cart ">
+                <img src="/assets/images/icon-add-to-cart.svg" alt="icon-add-to-cart" class="cart-img">
+                <p class="a">Add to Cart</p>
+              </div>
+            </div>
+            
+            
+            
+            <p class="gry">Macaron</p>
+            <p class="title">Macaron Mix of Five</p>
+            <p class="price">$8.00</p>
+            
+          </div>
+          
+          <div class="item">
+            <div class="cont-2">
+              <img src="/assets/images/image-tiramisu-mobile.jpg" class="hidden mobile" alt="image-tiramisu-mobile">
+              <img src="/assets/images/image-tiramisu-tablet.jpg" class="hidden tablet" alt="image-tiramisu-tablet">
+              <img src="/assets/images/image-tiramisu-desktop.jpg" class="hidden desktop" alt="image-tiramisu-desktop" >
+
+              <div class="calc">
+                <img class="ic minus" src="/assets/images/icon-decrement-quantity.svg" alt="icon-decrement-quantity">
+                <p class="quantity">0</p>
+                <img class="ic plus" src="/assets/images/icon-increment-quantity.svg" alt="icon-increment-quantity">
+              </div>
+
+              <div class="add-to-cart ">
+                <img src="/assets/images/icon-add-to-cart.svg" alt="icon-add-to-cart" class="cart-img">
+                <p class="a">Add to Cart</p>
+              </div>
+            </div>
+            
+            
+            
+            <p class="gry">Tiramisu</p>
+            <p class="title">Classic Tiramisu</p>
+            <p class="price">$5.50</p>
+            
+          </div>
+          
+          <div class="item">
+            <div class="cont-2">
+              <img src="/assets/images/image-baklava-mobile.jpg" class="hidden mobile" alt="image-baklava-mobile">
+              <img src="/assets/images/image-baklava-tablet.jpg" class="hidden tablet" alt="image-baklava-tablet">
+              <img src="/assets/images/image-baklava-desktop.jpg" class="hidden desktop" alt="image-baklava-desktop" >
+
+              <div class="calc">
+                <img class="ic minus" src="/assets/images/icon-decrement-quantity.svg" alt="icon-decrement-quantity">
+                <p class="quantity">0</p>
+                <img class="ic plus" src="/assets/images/icon-increment-quantity.svg" alt="icon-increment-quantity">
+              </div>
+
+              <div class="add-to-cart ">
+                <img src="/assets/images/icon-add-to-cart.svg" alt="icon-add-to-cart" class="cart-img">
+                <p class="a">Add to Cart</p>
+              </div>
+            </div>
+            
+            <p class="gry">Baklava</p>
+            <p class="title">Pistachio Baklava</p>
+            <p class="price">$4.00</p>
+            
+          </div>
+          
+          <div class="item">
+            <div class="cont-2">
+              <img src="/assets/images/image-meringue-mobile.jpg" class="hidden mobile" alt="image-meringue-mobile">
+              <img src="/assets/images/image-meringue-tablet.jpg" class="hidden tablet" alt="image-meringue-tablet">
+              <img src="/assets/images/image-meringue-desktop.jpg" class="hidden desktop" alt="image-meringue-desktop" >
+
+              <div class="calc">
+                <img class="ic minus" src="/assets/images/icon-decrement-quantity.svg" alt="icon-decrement-quantity">
+                <p class="quantity">00</p>
+                <img class="ic plus" src="/assets/images/icon-increment-quantity.svg" alt="icon-increment-quantity">
+              </div>
+
+              <div class="add-to-cart ">
+                <img src="/assets/images/icon-add-to-cart.svg" alt="icon-add-to-cart" class="cart-img">
+                <p class="a">Add to Cart</p>
+              </div>
+            </div>
+            
+            
+            
+            <p class="gry">Pie</p>
+            <p class="title">Lemon Meringue Pie</p>
+            <p class="price">$5.00</p>
+            
+          </div>
+          
+          <div class="item">
+            <div class="cont-2">
+              <img src="/assets/images/image-cake-mobile.jpg" class="hidden mobile" alt="image-cake-mobile">
+              <img src="/assets/images/image-cake-tablet.jpg" class="hidden tablet" alt="image-cake-tablet">
+              <img src="/assets/images/image-cake-desktop.jpg" class="hidden desktop" alt="image-cake-desktop" >
+
+              <div class="calc">
+                <img class="ic minus" src="/assets/images/icon-decrement-quantity.svg" alt="icon-decrement-quantity">
+                <p class="quantity">0</p>
+                <img class="ic plus" src="/assets/images/icon-increment-quantity.svg" alt="icon-increment-quantity">
+              </div>
+
+              <div class="add-to-cart ">
+                <img src="/assets/images/icon-add-to-cart.svg" alt="icon-add-to-cart" class="cart-img">
+                <p class="a">Add to Cart</p>
+              </div>
+            </div>
+            
+            
+            
+            <p class="gry">Cake</p>
+            <p class="title">Red Velvet Cake</p>
+            <p class="price">$4.50</p>
+            
+          </div>
+          
+          <div class="item">
+            <div class="cont-2">
+              <img src="/assets/images/image-brownie-mobile.jpg" class="hidden mobile" alt="image-brownie-mobile" >
+              <img src="/assets/images/image-brownie-tablet.jpg" class="hidden tablet" alt="image-brownie-tablet" >
+              <img src="/assets/images/image-brownie-desktop.jpg" class="hidden desktop" alt="image-brownie-desktop" >
+
+              <div class="calc">
+                <img class="ic minus" src="/assets/images/icon-decrement-quantity.svg" alt="icon-decrement-quantity">
+                <p class="quantity">0</p>
+                <img class="ic plus" src="/assets/images/icon-increment-quantity.svg" alt="icon-increment-quantity">
+              </div>
+
+              <div class="add-to-cart">
+                <img src="/assets/images/icon-add-to-cart.svg" alt="icon-add-to-cart" class="cart-img">
+                <p class="a">Add to Cart</p>
+              </div>
+            </div>
+            
+            <p class="gry">Brownie</p>
+            <p class="title">Salted Caramel Brownie</p>
+            <p class="price">5.50</p>
+            
+          </div>
+          
+          <div class="item">
+            <div class="cont-2">
+              <img src="/assets/images/image-panna-cotta-mobile.jpg" class="hidden mobile" alt="image-panna-cotta-mobile" >
+              <img src="/assets/images/image-panna-cotta-tablet.jpg" class="hidden tablet" alt="image-panna-cotta-tablet" >
+              <img src="/assets/images/image-panna-cotta-desktop.jpg" class="hidden desktop" alt="image-panna-cotta-desktop" >
+
+              <div class="calc">
+                <img class="ic minus" src="/assets/images/icon-decrement-quantity.svg" alt="icon-decrement-quantity">
+                <p class="quantity">0</p>
+                <img class="ic plus" src="/assets/images/icon-increment-quantity.svg" alt="icon-increment-quantity">
+              </div>
+
+              <div class="add-to-cart">
+                <img src="/assets/images/icon-add-to-cart.svg" alt="icon-add-to-cart" class="cart-img">
+                <p class="a">Add to Cart</p>
+              </div>
+            </div>
+            
+            
+            
+            <p class="gry">Panna Cotta</p>
+            <p class="title">Vanilla Panna Cotta</p>
+            <p class="price">$6.50</p>
+            
+          </div>
+
+        </div>
+      </div>
+      <div class="item last">
+        <h2 class="y">Your Cart (<p class="total">0</p>)</h2>
+
+        <div class="billing">
+          <div class="card">
+            <p>Order Total</p>
+            <div><span class="dol">$</span><span class="total-price"></span></div>
+          </div>
+          <div class="carbon">
+            <img class="carb-img" src="/assets/images/icon-carbon-neutral.svg" alt="icon-carbon-neutral">
+            <span>this is a </span><span class="gras">&nbsp carbon-neutral &nbsp </span><span> delivery</span>
+          </div>
+          <div class="confirm">Confirm Order</div>
+        </div>
+        <div class="not-yet">
+    
+          <div class="cake">
+
+            <img src="/assets/images/illustration-empty-cart.svg" class="cake-img" alt="illustration-empty-cart">
+            <p class="gry gry1">Your added items will appear here</p>
+        
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="purchase-done hidden">
+      <img class="dd" src="/assets/images/icon-order-confirmed.svg" alt="">
+      <h1>Order<br>Confirmed</h1>
+      <p>We hope you enjoy you your food</p>
+      
+      <div class="iti">
+        <div class="flex-comp">
+          <div class="comp hidden">
+            <img src="/assets/images/image-waffle-thumbnail.jpg" alt="">
+            <div class="in">
+              <p class="ellip">Waffle with Berries</p>
+              <div class="aha">
+                <div>
+                  <span class="quan"></span><span class="rd">x</span>
+                </div>
+                <div>
+                  <p>@ $6.50</p>
+                </div>
+              </div>
+              
+            </div>
+            <div class="yowai">
+              <div>
+                <span class="da">$</span><span class="qu"></span>
+              </div>
+            </div>
+
+          </div>
+
+          <div class="comp hidden">
+            <img src="/assets/images/image-baklava-thumbnail.jpg" alt="">
+            <div class="in">
+              <p class="ellip">Vanilla Bean Crème Brûlée</p>
+              <div class="aha">
+                <div>
+                  <span class="quan"></span><span class="rd">x</span>
+                </div>
+                <div>
+                  <p>@ $7.00</p>
+                </div>
+              </div>
+              
+            </div>
+            <div class="yowai">
+              <div>
+                <span>$</span><span class="qu"></span>
+              </div>
+            </div>
+
+          </div>
+
+          <div class="comp hidden">
+            <img src="/assets/images/image-macaron-thumbnail.jpg"  alt="">
+            <div class="in">
+              <p class="ellip">Macaron Mix of Five</p>
+              <div class="aha">
+                <div>
+                  <span class="quan"></span><span class="rd">x</span>
+                </div>
+                <div>
+                  <p>@ $8.00</p>
+                </div>
+              </div>
+              
+            </div>
+            <div class="yowai">
+              <div>
+                <span>$</span><span class="qu"></span>
+              </div>
+            </div>
+
+          </div>
+
+          <div class="comp hidden">
+            <img src="/assets/images/image-tiramisu-thumbnail.jpg"  alt="">
+            <div class="in">
+              <p class="ellip">Classic Tiramisu</p>
+              <div class="aha">
+                <div>
+                  <span class="quan"></span><span class="rd">x</span>
+                </div>
+                <div>
+                  <p>@ $5.50</p>
+                </div>
+              </div>
+              
+            </div>
+            <div class="yowai">
+              <div>
+                <span>$</span><span class="qu"></span>
+              </div>
+            </div>
+
+          </div>
+
+          <div class="comp hidden">
+            <img src="/assets/images/image-baklava-thumbnail.jpg" alt="">
+            <div class="in">
+              <p class="ellip">Pistachio Baklava</p>
+              <div class="aha">
+                <div>
+                  <span class="quan"></span><span class="rd">x</span>
+                </div>
+                <div>
+                  <p>@ $4.00</p>
+                </div>
+              </div>
+              
+            </div>
+            <div class="yowai">
+              <div>
+                <span>$</span><span class="qu"></span>
+              </div>
+            </div>
+
+          </div>
+
+          <div class="comp hidden">
+            <img src="/assets/images/image-meringue-thumbnail.jpg" alt="">
+            <div class="in">
+              <p class="ellip">Lemon Meringue Pie</p>
+              <div class="aha">
+                <div>
+                  <span class="quan"></span><span class="rd">x</span>
+                </div>
+                <div>
+                  <span>@ 5.00$</span>
+                </div>
+              </div>
+              
+            </div>
+            <div class="yowai">
+              <div>
+                <span>$</span><span class="qu"></span>
+              </div>
+            </div>
+
+          </div>
+
+          <div class="comp hidden">
+            <img src="/assets/images/image-cake-thumbnail.jpg" alt="">
+            <div class="in">
+              <p class="ellip">Red Velvet Cake</p>
+              <div class="aha">
+                <div>
+                  <span class="quan"></span><span class="rd">x</span>
+                </div>
+                <div>
+                  <p>@ $4.50</p>
+                </div>
+              </div>
+              
+            </div>
+            <div class="yowai">
+              <div>
+                <span>$</span><span class="qu"></span>
+              </div>
+            </div>
+
+          </div>
+
+          <div class="comp hidden">
+            <img src="/assets/images/image-brownie-thumbnail.jpg" alt="">
+            <div class="in">
+              <p class="ellip">Salted Caramel Brownie</p>
+              <div class="aha">
+                <div>
+                  <span class="quan"></span><span class="rd">x</span>
+                </div>
+                <div>
+                  <p>@ $5.50</p>
+                </div>
+              </div>
+              
+            </div>
+            <div class="yowai">
+              <div>
+                <span>$</span><span class="qu"></span>
+              </div>
+            </div>
+
+          </div>
+
+          <div class="comp hidden">
+            <img src="/assets/images/image-panna-cotta-thumbnail.jpg" alt="">
+            <div class="in">
+              <p class="ellip">Vanilla Panna Cotta</p>
+              <div class="aha">
+                <div>
+                  <span class="quan"></span><span class="rd">x</span>
+                </div>
+                <div>
+                  <p>@ $6.50</p>
+                </div>
+              </div>
+              
+            </div>
+            <div class="yowai">
+              <div>
+                <span>$</span><span class="qu"></span>
+              </div>
+            </div>
+
+          </div>
+        </div>
+        <div class="itit">
+          <span>Order Total</span>
+          <span>
+            <span class="dol">$</span><span class="total-price"></span>
+          </span>
+        </div>
+      </div>
+      
+      <div class="start-new confirm">Start New Order</div>
+    </div>
+    
+  </main>
+
+
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge">Frontend Mentor</a>. 
+    Coded by <a href="https://www.frontendmentor.io/profile/YOadYo06">YOadYo06</a>.
+  </div>
+  
+  <div class="abs"></div>
+  <div class="overlay"></div>
+</body>
+
+</html>
